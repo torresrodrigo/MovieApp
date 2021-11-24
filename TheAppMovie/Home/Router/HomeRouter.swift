@@ -18,6 +18,7 @@ class HomeRouter {
     
     func createViewController() -> UIViewController {
         let view = HomeView(nibName: "HomeView", bundle: Bundle.main)
+        view.title = "Peliculas Populares"
         return view
     }
     
