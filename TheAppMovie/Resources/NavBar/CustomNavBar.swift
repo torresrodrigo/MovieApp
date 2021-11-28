@@ -29,7 +29,7 @@ class CustomNavBar: UINavigationBar {
            if #available(iOS 13.0, *) {
                let appeararance = UINavigationBarAppearance()
                appeararance.configureWithOpaqueBackground()
-               appeararance.backgroundColor = .purple
+               appeararance.backgroundColor = Constants.Colors.primary
                appeararance.titleTextAttributes = [.foregroundColor: UIColor.white]
                tintColor = .white
                standardAppearance = appeararance

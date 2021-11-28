@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Constants {
     
@@ -19,6 +20,10 @@ struct Constants {
     struct Endpoints {
         static let urlListPopularMovies = "3/movie/popular"
         static let urlDetailMovie = "3/movie/"
+    }
+    
+    struct Colors {
+        static let primary = UIColor(named: "primary")
     }
     
 }
