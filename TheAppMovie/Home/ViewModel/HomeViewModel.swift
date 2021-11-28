@@ -23,4 +23,9 @@ class HomeViewModel {
         return apiManager.getPopularMovies()
     }
     
+    func makeDetailView(movieID: Int, moviePath: String?) {
+        guard let path = moviePath else { return }
+        router?.navigateToDetailView(movieID: movieID, pathImage: path)
+    }
+    
 }

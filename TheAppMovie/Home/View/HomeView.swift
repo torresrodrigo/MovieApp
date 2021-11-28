@@ -65,13 +65,12 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = moviesTableView.dequeueReusableCell(withIdentifier: MovieCell.identifier, for: indexPath) as! MovieCell
-        //cell.titleLabel.text = movies[indexPath.row].title
         cell.setupCell(data: movies[indexPath.row])
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(movies[indexPath.row].id)
+        viewModel.makeDetailView(movieID: movies[indexPath.row].id, moviePath: movies[indexPath.row].imageMovie)
     }
     
 }

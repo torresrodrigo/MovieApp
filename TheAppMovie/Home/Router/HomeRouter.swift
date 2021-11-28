@@ -25,6 +25,11 @@ class HomeRouter {
     func setSourceView(_ sourceView: UIViewController?) {
         guard let view = sourceView else {fatalError("Error")}
         self.sourceView = view
-    }    
+    }
+    
+    func navigateToDetailView(movieID: Int, pathImage: String) {
+        let detailView = DetailRouter(movieID: movieID, moviePath: pathImage).viewController
+        sourceView?.navigationController?.pushViewController(detailView, animated: true)
+    }
     
 }
