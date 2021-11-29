@@ -10,7 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeView" customModule="TheAppMovie" customModuleProvider="target">
             <connections>
-                <outlet property="activityIndicator" destination="ryd-Gd-uJe" id="crT-Cr-xJN"/>
                 <outlet property="moviesTableView" destination="7XY-6g-Ojx" id="gUw-Zt-peR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -24,18 +23,12 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
-                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="ryd-Gd-uJe">
-                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
-                    <color key="color" systemColor="systemIndigoColor"/>
-                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="7XY-6g-Ojx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ERr-Rg-OqB"/>
-                <constraint firstItem="ryd-Gd-uJe" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="FXH-rY-YWd"/>
                 <constraint firstItem="7XY-6g-Ojx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="NDZ-Pi-jJI"/>
-                <constraint firstItem="ryd-Gd-uJe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nwh-Va-goI"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7XY-6g-Ojx" secondAttribute="bottom" id="pKt-F7-iyD"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7XY-6g-Ojx" secondAttribute="trailing" id="v0T-a1-hFv"/>
             </constraints>
@@ -45,9 +38,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
